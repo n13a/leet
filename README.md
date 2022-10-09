@@ -1,3 +1,3 @@
 # leet
 
-Solving leetcode challenges every day
+Solving LeetCode challenges every day
