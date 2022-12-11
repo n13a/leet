@@ -18,3 +18,7 @@ span {
     display: block;
     text-align: center;
 }
+
+li {
+    text-align: center;
+}
