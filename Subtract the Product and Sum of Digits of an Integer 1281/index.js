@@ -1,12 +1,9 @@
 /**
- * @param {number[]} nums
+ * @param {number} n
  * @return {number}
  */
 
-var runningSum = function (nums) {
-    let a = []
-    for (let i = 1; i <= nums.length; i++) {
-        a.push(nums.slice(0, i).reduce((a, c) => a + +c, 0))
-    }
-    return a
+var subtractProductAndSum = n => {
+    const arr = n.toString().split('')
+    return arr.reduce((a,c)=> a * c, 1) - arr.reduce((a,c)=> a + +c, 0)
 };
