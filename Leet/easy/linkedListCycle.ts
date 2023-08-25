@@ -47,14 +47,14 @@ Follow up: Can you solve it using O(1) (i.e. constant) memory?
      val: number
      next: ListNode | null
      constructor(val?: number, next?: ListNode | null) {
-         this.val = (val===undefined ? 0 : val)
-         this.next = (next===undefined ? null : next)
+         this.val = (val === undefined ? 0 : val)
+         this.next = (next === undefined ? null : next)
      }
 
 
 function hasCycle(head: ListNode | null): boolean {
     let fast:ListNode | null = head,  slow: ListNode | null = head
-    while (fast !== null && fast.next !== null){
+    while (fast !== null && fast.next !== null && slow !== null){
         slow = slow.next
         fast = fast.next.next
         if(slow == fast){
